@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softwaresymas - Servicio Técnico</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softwaresymas - Servicio Técnico</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <!-- Carga FontAwesome para los iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Softwaresymas</h1>
-        <nav>
-            <ul>
-                <li><a href="#mantenimiento">Mantenimiento</a></li>
-                <li><a href="#instalacion">Instalación de Software y Hardware</a></li>
-                <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle">🌙</button>
-        <div class="wave"></div>
-    </header>
+  <!-- Header Fijo con Ondas -->
+  <header class="header">
+    <div class="header-content">
+      <h1>Softwaresymas</h1>
+      <p>Servicio Técnico de Computadoras</p>
+      <nav>
+        <ul>
+          <li><a href="#mantenimiento">Mantenimiento</a></li>
+          <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botón para cambiar entre tema claro y oscuro -->
+      <button id="theme-toggle" title="Cambiar tema">🌙</button>
+    </div>
+    <!-- Efecto de ondas (se usa una imagen SVG llamada wave.svg) -->
+    <div class="wave"></div>
+  </header>
 
+  <main>
+    <!-- Sección: Mantenimiento -->
     <section id="mantenimiento">
-        <h2>Mantenimiento</h2>
-        <p>Ofrecemos mantenimiento preventivo y correctivo para tu PC.</p>
-        <div class="image-container"></div>
+      <h2>Mantenimiento Preventivo</h2>
+      <p>Limpieza de componentes internos, diagnóstico y reparación de tu PC.</p>
+      <div class="image-container">
+        <!-- Agrega la imagen correspondiente -->
+        <img src="mantenimiento.jpg" alt="Mantenimiento de PC">
+      </div>
     </section>
 
+    <!-- Sección: Instalación de Software y Hardware -->
     <section id="instalacion">
-        <h2>Instalación de Software y Hardware</h2>
-        <p>Configuramos y optimizamos tu equipo con los mejores programas y hardware.</p>
-        <div class="image-container"></div>
+      <h2>Instalación de Software y Hardware</h2>
+      <p>Instalación de programas y armado de PC's a la medida de tus necesidades.</p>
+      <div class="image-container">
+        <!-- Agrega la imagen correspondiente -->
+        <img src="instalacion.jpg" alt="Instalación de Software y Hardware">
+      </div>
     </section>
 
+    <!-- Sección: Sobre Nosotros -->
     <section id="quienes-somos">
-        <h2>¿Quiénes Somos?</h2>
-        <p>Más de 10 años de experiencia brindando soluciones tecnológicas.</p>
-        <div class="image-container"></div>
+      <h2>Sobre Nosotros</h2>
+      <p>Con más de 10 años de experiencia, en Softwaresymas nos dedicamos al servicio técnico de computadoras.</p>
+      <div class="image-container">
+        <!-- Coloca aquí tu foto -->
+        <img src="mi-foto.jpg" alt="Mi foto">
+      </div>
     </section>
 
+    <!-- Sección: Contacto -->
     <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contact-links">
-            <a href="https://wa.me/50760690148" target="_blank" class="cta-button whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="mailto:softwaresymas507@gmail.com" class="cta-button email">
-                <i class="fas fa-envelope"></i> Correo
-            </a>
-            <a href="https://www.instagram.com/softwaresymas" target="_blank" class="cta-button instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-        </div>
+      <h2>Contacto</h2>
+      <div class="contact-links">
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/50760690148" target="_blank" class="cta-button whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <!-- Botón de Correo: Sobre con @ -->
+        <a href="mailto:softwaresymas507@gmail.com" class="cta-button email">
+          <div class="icon-envelope">
+            <i class="fas fa-envelope"></i>
+            <span class="at-symbol">@</span>
+          </div>
+          Correo
+        </a>
+        <!-- Botón de Instagram -->
+        <a href="https://www.instagram.com/softwaresymas/" target="_blank" class="cta-button instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
     </section>
+  </main>
 </body>
 </html>
