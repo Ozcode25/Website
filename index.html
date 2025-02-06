@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOFTWARESYMAS - Servicio Técnico de Computadoras 💻🔧</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    <script src="script.js"></script>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #1e304f;
-    }
-    .font-titulo {
-      font-family: 'Montserrat', sans-serif;
-    }
-    .header-fixed {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #1e304f;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-link {
-      transition: all 0.3s ease;
-    }
-    .nav-link:hover, .nav-link:focus {
-      transform: scale(1.1);
-      color: #1e90ff;
-    }
-    .section {
-      padding-top: 100px;
-      min-height: 100vh;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softwaresymas - Servicio Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-white">
-  <header class="header-fixed p-4 flex justify-between items-center border-b border-gray-700">
-    <div class="flex items-center gap-4">
-      <img src="Softwaresymas2025logo.png" class="h-14 w-14 object-contain">
-      <div class="text-2xl font-bold font-titulo text-teal-400">SOFTWARESYMAS</div>
-    </div>
-    <nav class="flex gap-6">
-      <a href="#mantenimiento" class="nav-link">Mantenimiento</a>
-      <a href="#instalacion" class="nav-link">Instalación de Software y Hardware</a>
-      <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
-      <a href="#contacto" class="nav-link">Contacto</a>
-    </nav>
-  </header>
+<body>
+    <header class="header">
+        <h1>Softwaresymas</h1>
+        <nav>
+            <ul>
+                <li><a href="#mantenimiento">Mantenimiento</a></li>
+                <li><a href="#instalacion">Instalación de Software y Hardware</a></li>
+                <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+        <div class="wave"></div>
+    </header>
 
-  <main class="mt-24">
-    <section id="mantenimiento" class="section bg-gray-900">
-      <h2 class="text-center text-3xl font-bold text-teal-400">Mantenimiento</h2>
-      <div class="mt-4 text-center">Espacio para imágenes</div>
+    <section id="mantenimiento">
+        <h2>Mantenimiento</h2>
+        <p>Ofrecemos mantenimiento preventivo y correctivo para tu PC.</p>
+        <div class="image-container"></div>
     </section>
 
-    <section id="instalacion" class="section bg-gray-800">
-      <h2 class="text-center text-3xl font-bold text-blue-400">Instalación de Software y Hardware</h2>
-      <div class="mt-4 text-center">Espacio para imágenes</div>
+    <section id="instalacion">
+        <h2>Instalación de Software y Hardware</h2>
+        <p>Configuramos y optimizamos tu equipo con los mejores programas y hardware.</p>
+        <div class="image-container"></div>
     </section>
 
-    <section id="quienes-somos" class="section bg-gray-700">
-      <h2 class="text-center text-3xl font-bold text-indigo-400">Quiénes Somos</h2>
-      <div class="mt-4 text-center">Espacio para imágenes</div>
+    <section id="quienes-somos">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Más de 10 años de experiencia brindando soluciones tecnológicas.</p>
+        <div class="image-container"></div>
     </section>
 
-    <section id="contacto" class="section bg-gray-600">
-      <h2 class="text-center text-3xl font-bold text-yellow-400">Contacto</h2>
-      <div class="mt-4 text-center">Espacio para imágenes</div>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/50760690148" target="_blank" class="cta-button whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:softwaresymas507@gmail.com" class="cta-button email">
+                <i class="fas fa-envelope"></i> Correo
+            </a>
+            <a href="https://www.instagram.com/softwaresymas" target="_blank" class="cta-button instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
     </section>
-  </main>
 </body>
 </html>
