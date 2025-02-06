@@ -18,6 +18,22 @@ nav ul li a.active {
     background: #777;
     transform: scale(1.1);
 }
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #0073e6, #4a90e2, #6db3f2, #0073e6);
+    background-size: 400% 400%;
+    animation: waves 10s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+/* Animación de ondas */
+@keyframes waves {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 nav ul {
     list-style: none;
     padding: 0;
