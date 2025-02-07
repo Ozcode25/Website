@@ -1,107 +1,57 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    transition: background-color 0.3s ease;
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #3498db;
+    --color-hover: #2980b9;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
+/* Efecto hover para enlaces de navegación */
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+nav ul li a:hover {
+    color: var(--color-hover);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.redes-sociales {
+/* Iconos en header */
+.header-social {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 15px;
 }
 
-.redes-sociales a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
+.header-social a {
+    color: #fff;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-.redes-sociales a.whatsapp:hover {
-    color: #25d366; /* Color de WhatsApp */
+.header-social a:hover {
+    color: var(--color-secundario);
 }
 
-.redes-sociales a.instagram:hover {
-    color: #e4405f; /* Color de Instagram */
-}
-
-.redes-sociales a.email:hover {
-    color: #d44638; /* Color de Gmail */
-}
-
-form {
+/* Iconos en footer */
+.footer-social {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
 }
 
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #333;
+.footer-social a {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
 }
 
-form button:hover {
-    background: #555;
+.footer-social a:hover {
+    color: var(--color-secundario);
 }
