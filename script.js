@@ -1,19 +1,28 @@
 // script.js
-
-// Validación del formulario de cita
-document.getElementById('formularioCita').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe
-
-    const nombre = document.getElementById('nombre').value;
-    const telefono = document.getElementById('telefono').value;
-    const fecha = document.getElementById('fecha').value;
-    const mensaje = document.getElementById('mensaje').value;
-
-    if (nombre && telefono && fecha && mensaje) {
-        document.getElementById('mensajeCita').textContent = 'Cita agendada correctamente. Nos pondremos en contacto contigo pronto.';
-        document.getElementById('mensajeCita').style.color = 'green';
-    } else {
-        document.getElementById('mensajeCita').textContent = 'Por favor, completa todos los campos.';
+document.getElementById('formularioCita').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Configuración para Formspree (servicio gratuito)
+    const formData = new FormData(this);
+    
+    fetch('https://formspree.io/f/xvojnzqw', { // Reemplaza con tu ID de Formspree
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('mensajeCita').textContent = '¡Cita agendada! Nos pondremos en contacto contigo.';
+            document.getElementById('mensajeCita').style.color = 'green';
+            this.reset();
+        } else {
+            throw new Error('Error en el envío');
+        }
+    })
+    .catch(error => {
+        document.getElementById('mensajeCita').textContent = 'Error al enviar. Por favor intenta nuevamente.';
         document.getElementById('mensajeCita').style.color = 'red';
-    }
+    });
 });
