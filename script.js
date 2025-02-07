@@ -6,7 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
   });
 
-  // (Opcional) Efecto de hover en el menú
+  // Toggle para menú en móviles
+  const menuToggle = document.getElementById("menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
+  menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("active");
+  });
+
+  // Opcional: Efecto hover en el menú (para escritorio)
   const menuItems = document.querySelectorAll("nav ul li a");
   menuItems.forEach(item => {
     item.addEventListener("mouseover", () => item.style.transform = "scale(1.1)");
