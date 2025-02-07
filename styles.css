@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    transition: background-color 0.3s ease;
 }
 
 header {
@@ -41,4 +42,66 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a.whatsapp:hover {
+    color: #25d366; /* Color de WhatsApp */
+}
+
+.redes-sociales a.instagram:hover {
+    color: #e4405f; /* Color de Instagram */
+}
+
+.redes-sociales a.email:hover {
+    color: #d44638; /* Color de Gmail */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
 }
