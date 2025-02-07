@@ -1,234 +1,110 @@
-/* --- Reset y Estilos Base --- */
+/* Reset */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
-  color: #333;
-  transition: background 0.3s, color 0.3s;
-  overflow-x: hidden;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* --- Header --- */
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #002244;  /* Azul oscuro */
-  color: #fff;
-  z-index: 1000;
-}
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  position: relative;
-}
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
-}
-.business-name h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-.business-name p {
-  font-size: 0.9em;
-  margin: 0;
-}
-#theme-toggle {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-.menu-toggle {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5em;
-  cursor: pointer;
-  display: none;
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #5000ca;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
 }
 
-/* --- Menú Principal --- */
-.main-nav {
-  background: #002244;
-}
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
-}
-.main-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s;
-}
-.main-nav ul li a:hover {
-  color: #00c3ff;
-  transform: scale(1.1);
-}
-
-/* --- Efecto de Ondas --- */
-.wave {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: url('wave.svg') repeat-x;
-  animation: waveAnimation 6s linear infinite;
-}
-@keyframes waveAnimation {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 1000px; }
-}
-
-/* --- Main y Secciones --- */
-main {
-  margin-top: 160px; /* Compensa el header fijo */
-}
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
-.image-container {
-  margin-top: 20px;
-}
-.image-container img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* --- Contacto y Botones CTA --- */
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-.cta-button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1em;
-  transition: background 0.3s, transform 0.3s;
-}
-.whatsapp { background: #25D366; }
-.whatsapp:hover { background: #1EBE56; transform: scale(1.05); }
-.email { background: #EA4335; }
-.email:hover { background: #D93025; transform: scale(1.05); }
-.instagram { background: #E1306C; }
-.instagram:hover { background: #C13584; transform: scale(1.05); }
-.icon-envelope {
-  position: relative;
-  display: inline-block;
-}
-.icon-envelope i {
-  font-size: 1.2em;
-}
-.at-symbol {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  font-size: 0.7em;
-  color: #fff;
-}
-
-/* --- Preguntas Frecuentes --- */
-.faq-item {
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: left;
-}
-.faq-item h3 {
-  font-size: 1.2em;
-  color: #002244;
-}
-.faq-item p {
-  font-size: 1em;
-  margin-top: 5px;
-}
-
-/* --- Footer --- */
-.footer {
-  background: #002244;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-}
-
-/* --- Modo Oscuro --- */
-.dark-mode {
-  background: #1c1c1c;
-  color: #eee;
-}
-.dark-mode body {
-  background: #1c1c1c;
-  color: #eee;
-}
-.dark-mode .header,
-.dark-mode .main-nav,
-.dark-mode .footer {
-  background: #000;
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-  .header-top {
-    flex-wrap: wrap;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .main-nav {
-    display: none;
-    flex-direction: column;
-  }
-  .main-nav.active {
+.header-content {
     display: flex;
-  }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .business-name h1 {
-    font-size: 1.2em;
-  }
-  .business-name p {
-    font-size: 0.8em;
-  }
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-@media (max-width: 480px) {
-  .logo {
-    width: 40px;
-  }
-  #theme-toggle, .menu-toggle {
-    font-size: 1.3em;
-  }
+.logo {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.wave {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+    background: url('wave.svg') repeat-x;
+}
+
+/* Botón de tema */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #5000ca;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
