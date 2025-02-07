@@ -1,32 +1,19 @@
 // script.js
 
-// Cambiar color de fondo
-document.getElementById('cambiarColor').addEventListener('click', function() {
-    const colores = ['#ffcccc', '#ccffcc', '#ccccff', '#ffffcc', '#ffccff'];
-    const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    document.body.style.backgroundColor = colorAleatorio;
-});
-
-// Contador de clics
-let contador = 0;
-document.getElementById('cambiarColor').addEventListener('click', function() {
-    contador++;
-    document.getElementById('contador').textContent = contador;
-});
-
-// Validación de formulario
-document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+// Validación del formulario de cita
+document.getElementById('formularioCita').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe
 
     const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const fecha = document.getElementById('fecha').value;
     const mensaje = document.getElementById('mensaje').value;
 
-    if (nombre && email && mensaje) {
-        document.getElementById('mensajeFormulario').textContent = 'Formulario enviado correctamente.';
-        document.getElementById('mensajeFormulario').style.color = 'green';
+    if (nombre && telefono && fecha && mensaje) {
+        document.getElementById('mensajeCita').textContent = 'Cita agendada correctamente. Nos pondremos en contacto contigo pronto.';
+        document.getElementById('mensajeCita').style.color = 'green';
     } else {
-        document.getElementById('mensajeFormulario').textContent = 'Por favor, completa todos los campos.';
-        document.getElementById('mensajeFormulario').style.color = 'red';
+        document.getElementById('mensajeCita').textContent = 'Por favor, completa todos los campos.';
+        document.getElementById('mensajeCita').style.color = 'red';
     }
 });
