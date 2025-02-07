@@ -10,59 +10,73 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header Fijo con Ondas -->
+  <!-- Header Fijo -->
   <header class="header">
-    <div class="header-content">
-      <h1>Softwaresymas</h1>
-      <p>Servicio Técnico de Computadoras</p>
-      <nav>
-        <ul>
-          <li><a href="#mantenimiento">Mantenimiento</a></li>
-          <li><a href="#instalacion">Instalación</a></li>
-          <li><a href="#quienes-somos">Sobre Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- Botón para cambiar entre tema claro y oscuro -->
+    <div class="header-top">
+      <!-- Espacio para el logo de la empresa -->
+      <div class="logo-container">
+        <!-- Coloca tu logo en "logo.png" o modifica la ruta -->
+        <img src="logo.png" alt="Logo Softwaresymas" class="logo">
+      </div>
+      <!-- Nombre del negocio -->
+      <div class="business-name">
+        <h1>Softwaresymas</h1>
+        <p>Servicio Técnico de Computadoras</p>
+      </div>
+      <!-- Botón para alternar el tema -->
       <button id="theme-toggle" title="Cambiar tema">🌙</button>
+      <!-- Botón del menú en móviles -->
+      <button id="menu-toggle" class="menu-toggle" title="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <!-- Efecto de ondas (se usa una imagen SVG llamada wave.svg) -->
+    <!-- Menú principal -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#mantenimiento">Mantenimiento</a></li>
+        <li><a href="#instalacion">Instalación</a></li>
+        <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#faq">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
+    <!-- Efecto de ondas (usa un archivo SVG llamado wave.svg) -->
     <div class="wave"></div>
   </header>
 
   <main>
     <!-- Sección: Mantenimiento -->
-    <section id="mantenimiento">
+    <section id="mantenimiento" class="section">
       <h2>Mantenimiento Preventivo</h2>
       <p>Limpieza de componentes internos, diagnóstico y reparación de tu PC.</p>
       <div class="image-container">
-        <!-- Agrega la imagen correspondiente -->
+        <!-- Coloca aquí una imagen de tus trabajos -->
         <img src="mantenimiento.jpg" alt="Mantenimiento de PC">
       </div>
     </section>
 
     <!-- Sección: Instalación de Software y Hardware -->
-    <section id="instalacion">
+    <section id="instalacion" class="section">
       <h2>Instalación de Software y Hardware</h2>
       <p>Instalación de programas y armado de PC's a la medida de tus necesidades.</p>
       <div class="image-container">
-        <!-- Agrega la imagen correspondiente -->
+        <!-- Coloca aquí una imagen de tus trabajos -->
         <img src="instalacion.jpg" alt="Instalación de Software y Hardware">
       </div>
     </section>
 
     <!-- Sección: Sobre Nosotros -->
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="section">
       <h2>Sobre Nosotros</h2>
       <p>Con más de 10 años de experiencia, en Softwaresymas nos dedicamos al servicio técnico de computadoras.</p>
       <div class="image-container">
-        <!-- Coloca aquí tu foto -->
-        <img src="mi-foto.jpg" alt="Mi foto">
+        <!-- Coloca aquí tu foto o la del equipo -->
+        <img src="mi-foto.jpg" alt="Foto del equipo o del dueño">
       </div>
     </section>
 
     <!-- Sección: Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="section">
       <h2>Contacto</h2>
       <div class="contact-links">
         <!-- Botón de WhatsApp -->
@@ -83,6 +97,32 @@
         </a>
       </div>
     </section>
+
+    <!-- Sección: Preguntas Frecuentes -->
+    <section id="faq" class="section">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <h3>¿Cuánto tiempo demora el servicio? ⏰</h3>
+        <p>La mayoría de nuestros servicios se realizan en menos de 24 horas.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Ofrecen garantía? ✅</h3>
+        <p>Sí, todos nuestros servicios cuentan con garantía de calidad.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cuánto cuesta el servicio? 💲</h3>
+        <p>Contamos con precios competitivos según el tipo de servicio y equipo.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Realizan servicios a domicilio? 🏠</h3>
+        <p>Sí, ofrecemos servicio a domicilio para mayor comodidad.</p>
+      </div>
+    </section>
   </main>
+
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <p>© 2025 Servicios Técnicos. Todos los derechos reservados. | Desarrollado por Software y Más 💻✨</p>
+  </footer>
 </body>
 </html>
