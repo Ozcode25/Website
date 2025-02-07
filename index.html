@@ -3,82 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softwaresymas - Servicio Técnico</title>
+    <title>Servicios Técnicos</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link rel="icon" href="logo.png">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Header con onda -->
     <header>
-        <div class="header-content">
-            <img src="logo.png" alt="Logo de Softwaresymas" class="logo">
-            <h1>Softwaresymas</h1>
-            <button id="theme-toggle">🌙</button> <!-- Cambio de tema -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo de la empresa" class="logo">
+            <h1>Servicios Técnicos</h1>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#mantenimiento">Mantenimiento</a></li>
-                <li><a href="#instalacion">Instalación de Software y Hardware</a></li>
-                <li><a href="#nosotros">¿Quiénes somos?</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-            <button class="menu-toggle">☰</button> <!-- Menú móvil -->
         </nav>
-        <div class="wave"></div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#5000ca" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,90.7C384,128,480,224,576,240C672,256,768,192,864,170.7C960,149,1056,171,1152,186.7C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
     </header>
 
-    <!-- Secciones -->
-    <section id="mantenimiento">
-        <h2>Mantenimiento</h2>
-        <p>Servicio de mantenimiento preventivo y correctivo.</p>
-        <div class="image-container">
-            <img src="mantenimiento.jpg" alt="Imagen de mantenimiento">
-        </div>
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <img src="mi-foto.jpg" alt="Mi foto" class="profile-pic">
+        <p>Información sobre la empresa...</p>
     </section>
 
-    <section id="instalacion">
-        <h2>Instalación de Software y Hardware</h2>
-        <p>Instalación de programas, armado de PC's y diagnóstico.</p>
-        <div class="image-container">
-            <img src="instalacion.jpg" alt="Imagen de instalación">
-        </div>
-    </section>
-
-    <section id="nosotros">
-        <h2>¿Quiénes somos?</h2>
-        <p>Más de 10 años brindando soluciones técnicas.</p>
-        <img src="mi-foto.jpg" alt="Foto del dueño">
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¡Contáctanos para más información!</p>
-        <div class="contact-icons">
-            <a href="https://wa.me/50760690148" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/softwaresymas" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-            <a href="mailto:softwaresymas507@gmail.com"><img src="correo.png" alt="Correo"></a>
-        </div>
-    </section>
-
-    <!-- Preguntas Frecuentes -->
     <section id="faq">
         <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>¿Cuánto tiempo demora el servicio? ⏰</h3>
-            <p>La mayoría de nuestros servicios se realizan en menos de 24 horas.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Ofrecen garantía? ✅</h3>
-            <p>Sí, todos nuestros servicios cuentan con garantía de calidad.</p>
-        </div>
+        <ul>
+            <li><strong>¿Cuánto tiempo demora el servicio? ⏰</strong> <br> La mayoría de nuestros servicios se realizan en menos de 24 horas.</li>
+            <li><strong>¿Ofrecen garantía? ✅</strong> <br> Sí, todos nuestros servicios cuentan con garantía de calidad.</li>
+            <li><strong>¿Cuánto cuesta el servicio? 💲</strong> <br> Contamos con precios competitivos según el tipo de servicio y equipo.</li>
+            <li><strong>¿Realizan servicios a domicilio? 🏠</strong> <br> Sí, ofrecemos servicio a domicilio para mayor comodidad.</li>
+        </ul>
     </section>
 
-    <!-- Pie de página -->
     <footer>
+        <div class="contact-icons">
+            <a href="https://wa.me/50760690148" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/softwaresymas" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:softwaresymas507@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
         <p>© 2025 Servicios Técnicos. Todos los derechos reservados. | Desarrollado por Software y Más 💻✨</p>
     </footer>
-
 </body>
 </html>
