@@ -1,76 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softwaresymas - Servicios Técnicos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFTWARESYMAS - Servicio Técnico de Computadoras 💻🔧</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente para el título -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <!-- Fuente para el contenido -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="Softwaresymas2025logo.png" alt="Logo Softwaresymas">
+<body class="text-white">
+  <!-- Header Fijo -->
+  <header class="fixed top-0 left-0 right-0 bg-[#1e304f] shadow z-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4 border-b border-gray-700">
+      <!-- Logo y Nombre -->
+      <div class="flex items-center gap-4">
+        <img src="Softwaresymas2025logo.png" alt="Logo de SOFTWARESYMAS" class="h-14 w-14 object-contain">
+        <div class="text-2xl font-bold font-titulo color1">
+          SOFTWARESYMAS
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#agendar-cita">Agendar Cita</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      </div>
+      <!-- Iconos de Contacto -->
+      <div class="flex items-center gap-4 mt-2 md:mt-0">
+        <!-- WhatsApp (Icono Oficial) -->
+        <a href="https://wa.me/50760690148" target="_blank" title="WhatsApp" class="icon-animation">
+          <svg role="img" viewBox="0 0 24 24" class="icon fill-current text-green-500" xmlns="http://www.w3.org/2000/svg">
+            <title>WhatsApp</title>
+            <path d="M17.472 14.382c-.297-.149-1.757-.867-2.03-.967-.273-.1-.472-.148-.67.15-.197.297-.767.967-.94 1.164-.173.197-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.1-.198.05-.372-.025-.521-.075-.148-.67-1.612-.92-2.21-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.57-.009-.198 0-.52.074-.79.372-.27.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.87.118.57-.085 1.757-.718 2.005-1.413.248-.695.248-1.29.173-1.414-.074-.124-.27-.198-.565-.347zM12.004 2.002C6.477 2.002 2.002 6.477 2.002 12.004c0 2.119.553 4.106 1.512 5.871L2 22l4.273-1.487c1.699.928 3.62 1.465 5.731 1.465 5.526 0 10.001-4.475 10.001-10.001S17.53 2.002 12.004 2.002z"/>
+          </svg>
+        </a>
+        <!-- Instagram (Icono Oficial) -->
+        <a href="https://www.instagram.com/softwaresymas" target="_blank" title="Instagram" class="icon-animation">
+          <svg role="img" viewBox="0 0 24 24" class="icon fill-current text-pink-500" xmlns="http://www.w3.org/2000/svg">
+            <title>Instagram</title>
+            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.17.054 1.97.24 2.43.403a4.92 4.92 0 0 1 1.675 1.092 4.92 4.92 0 0 1 1.092 1.675c.163.46.35 1.26.403 2.43.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.054 1.17-.24 1.97-.403 2.43a4.92 4.92 0 0 1-1.092 1.675 4.92 4.92 0 0 1-1.675 1.092c-.46.163-1.26.35-2.43.403-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.17-.054-1.97-.24-2.43-.403a4.92 4.92 0 0 1-1.675-1.092 4.92 4.92 0 0 1-1.092-1.675c-.163-.46-.35-1.26-.403-2.43C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.849c.054-1.17.24-1.97.403-2.43A4.92 4.92 0 0 1 3.738 3.05a4.92 4.92 0 0 1 1.675-1.092c.46-.163 1.26-.35 2.43-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.737 0 8.332.012 7.052.07 5.773.128 4.674.308 3.78.635A7.072 7.072 0 0 0 1.21 2.266 7.072 7.072 0 0 0 .635 3.78C.308 4.674.128 5.773.07 7.052.012 8.332 0 8.737 0 12c0 3.263.012 3.668.07 4.948.058 1.28.238 2.378.565 3.272a7.072 7.072 0 0 0 1.575 2.516 7.072 7.072 0 0 0 2.516 1.575c.894.327 1.993.507 3.272.565C8.332 23.988 8.737 24 12 24s3.668-.012 4.948-.07c1.28-.058 2.378-.238 3.272-.565a7.072 7.072 0 0 0 2.516-1.575 7.072 7.072 0 0 0 1.575-2.516c.327-.894.507-1.993.565-3.272.058-1.28.07-1.685.07-4.948s-.012-3.668-.07-4.948c-.058-1.28-.238-2.378-.565-3.272a7.072 7.072 0 0 0-1.575-2.516A7.072 7.072 0 0 0 20.22.635c-.894-.327-1.993-.507-3.272-.565C15.668.012 15.263 0 12 0z"/>
+            <path d="M12 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A4 4 0 1 1 16 12a4 4 0 0 1-4 4z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+          </svg>
+        </a>
+        <!-- Email (Icono Oficial) -->
+        <a href="mailto:softwaresymas507@gmail.com" title="Email" class="icon-animation">
+          <svg role="img" viewBox="0 0 24 24" class="icon fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg">
+            <title>Email</title>
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
 
-        <!-- Iconos en header -->
-        <div class="header-social">
-            <a href="https://wa.me/50760690148" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/softwaresymas/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:softwaresymas507@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </header>
-
-    <!-- Secciones anteriores permanecen igual -->
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <!-- Iconos duplicados en sección contacto -->
-        <div class="redes-sociales">
-            <a href="https://wa.me/50760690148" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://www.instagram.com/softwaresymas/" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="mailto:softwaresymas507@gmail.com">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-        </div>
+  <!-- Contenido Principal -->
+  <main class="container mx-auto px-4 pt-24">
+    <!-- Sección: Header con CTA Principal -->
+    <section class="text-center py-10">
+      <h1 class="text-4xl font-bold color1 mb-4">¡Repara y optimiza tu PC hoy! 💻✨</h1>
+      <p class="text-lg mb-6">Ofrecemos servicios técnicos de mantenimiento, reparación e instalación para computadoras, laptops y de escritorio. ¡No esperes más y mejora tu equipo!</p>
+      <a href="#contacto" class="inline-block bg-color4 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
+        ¡Agenda tu servicio ahora! 🚀
+      </a>
     </section>
 
-    <footer>
-        <!-- Iconos en footer -->
-        <div class="footer-social">
-            <a href="https://wa.me/50760690148" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/softwaresymas/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:softwaresymas507@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
+    <!-- Sección: Servicios (3 Cards) -->
+    <section id="servicios" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center color1 mb-8">Nuestros Servicios Técnicos 🛠️</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Mantenimiento</h3>
+          <p class="text-color5">Limpieza interna, cambio de pantallas y teclado. ¡Tu equipo en óptimas condiciones!</p>
         </div>
-        <p>&copy; 2023 Softwaresymas. Todos los derechos reservados.</p>
-    </footer>
+        <!-- Card 2 -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Instalación de Software y Hardware</h3>
+          <p class="text-color5">Configuramos y actualizamos tu sistema para un mejor rendimiento.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Consultoría Técnica</h3>
+          <p class="text-color5">Asesoría experta para la optimización y solución de problemas técnicos.</p>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Sección: Quién es el Técnico -->
+    <section id="quien-es" class="py-10 bg-gray-800 rounded-lg">
+      <div class="flex flex-col items-center">
+        <div class="mb-6">
+          <img src="Mi-Imagen.JPG" alt="Mi foto" class="rounded-full border-4 border-white shadow-lg w-32 h-32 object-cover">
+        </div>
+        <div class="max-w-md text-center">
+          <h2 class="text-3xl font-bold mb-4">Conoce a tu Técnico 🔧</h2>
+          <p class="text-lg">Soy un experto en mantenimiento y reparación de computadoras, con años de experiencia y pasión por la tecnología. Estoy aquí para ayudarte a que tu equipo funcione de manera óptima. ¡Confía en mí para darle nueva vida a tu PC!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Servicios que Ofrezco -->
+    <section id="servicios-ofrezco" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center color1 mb-8">Servicios que Ofrezco 📌</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card: Mantenimiento -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Mantenimiento</h3>
+          <p class="text-color5">Limpieza de componentes internos, cambio de pantallas y teclado para prolongar la vida útil de tu equipo.</p>
+        </div>
+        <!-- Card: Instalación -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Instalación de Software y Hardware</h3>
+          <p class="text-color5">Instalamos y configuramos los programas y dispositivos necesarios para que tu sistema rinda al máximo.</p>
+        </div>
+        <!-- Card: Consultoría -->
+        <div class="border rounded-lg shadow p-6 bg-gray-900">
+          <h3 class="text-2xl font-semibold mb-2 color1">Consultoría Técnica</h3>
+          <p class="text-color5">Te asesoramos en la mejora, optimización y solución de problemas técnicos de tu equipo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Preguntas Frecuentes -->
+    <section id="faq" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes 🤔</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
+            <h4 class="font-semibold">¿Cuánto tiempo demora el servicio? ⏰</h4>
+            <p>La mayoría de nuestros servicios se realizan en menos de 24 horas.</p>
+          </div>
+          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
+            <h4 class="font-semibold">¿Ofrecen garantía? ✅</h4>
+            <p>Sí, todos nuestros servicios cuentan con garantía de calidad.</p>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
+            <h4 class="font-semibold">¿Cuánto cuesta el servicio? 💲</h4>
+            <p>Contamos con precios competitivos según el tipo de servicio y equipo.</p>
+          </div>
+          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
+            <h4 class="font-semibold">¿Realizan servicios a domicilio? 🏠</h4>
+            <p>Sí, ofrecemos servicio a domicilio para mayor comodidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Precio y Beneficios -->
+    <section id="precio" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center color1 mb-8">Precios y Beneficios 💰</h2>
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div class="bg-gray-900 p-6 rounded-lg shadow">
+          <h3 class="text-2xl font-semibold color1 mb-4">¡La mejor inversión para tu equipo!</h3>
+          <p class="text-color5 mb-4">Con nuestros servicios técnicos, aseguras el óptimo funcionamiento de tu computadora, prolongas su vida útil y evitas costosos reemplazos. ¡No esperes a que el problema se agrave!</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow">
+          <h3 class="text-2xl font-semibold color1 mb-4">Precios desde <span class="text-3xl font-bold">$15.00</span></h3>
+          <ul class="mb-4 space-y-2">
+            <li class="flex items-center"><span class="mr-2">✔️</span> Servicio rápido y confiable</li>
+            <li class="flex items-center"><span class="mr-2">✔️</span> Atención personalizada</li>
+            <li class="flex items-center"><span class="mr-2">✔️</span> Garantía en todos nuestros trabajos</li>
+          </ul>
+          <a href="https://wa.me/50760690148" target="_blank" class="block text-center w-full bg-color4 text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-400 transition duration-300">
+            ¡Chateanos! 🚀
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">Contáctanos 📞</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a href="https://wa.me/50760690148" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp" class="bg-color4 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+      <div class="mt-8 text-center">
+        <p class="text-lg">O escríbenos a: <a href="mailto:softwaresymas507@gmail.com" class="underline text-color4">softwaresymas507@gmail.com</a></p>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="py-6 text-center text-color5">
+      <p>&copy; 2025 Servicios Técnicos. Todos los derechos reservados. | Desarrollado por Software y Más 💻✨</p>
+    </footer>
+  </main>
+
+  <!-- Script personalizado -->
+  <script src="script.js"></script>
 </body>
 </html>
