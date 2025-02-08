@@ -16,9 +16,9 @@
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="text-white">
-  <!-- Header Fijo -->
-  <header class="fixed top-0 left-0 right-0 bg-primary shadow z-50">
+<body class="bg-sky-100 text-white">
+  <!-- Header Fijo con fondo traslúcido -->
+  <header class="fixed top-0 left-0 right-0 bg-sky-100 bg-opacity-70 shadow z-50">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4 border-b border-gray-700">
       <!-- Logo y Nombre -->
       <div class="flex items-center gap-4">
@@ -27,17 +27,17 @@
           SOFTWARESYMAS
         </div>
       </div>
-      <!-- Iconos de Contacto -->
-     <!-- WhatsApp Icon -->
-<!-- WhatsApp Icon -->
-<a href="https://wa.me/50760690148" target="_blank">
-  <img src="whatsapp-icon.png" alt="WhatsApp" width="40" height="40">
-</a>
-<!-- Instagram Icon -->
-<a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
-  <img src="instagram-icon.png" alt="Instagram" width="40" height="40">
-</a>
-        <!-- Email (Icono Oficial) -->
+      <!-- Iconos de Contacto con tamaños ajustados -->
+      <div class="flex items-center gap-6">
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/50760690148" target="_blank">
+          <img src="whatsapp-icon.png" alt="WhatsApp" class="h-10 w-10">
+        </a>
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
+          <img src="instagram-icon.png" alt="Instagram" class="h-10 w-10">
+        </a>
+        <!-- Email Icon -->
         <a href="mailto:softwaresymas507@gmail.com" title="Email" class="icon-animation">
           <svg role="img" viewBox="0 0 24 24" class="icon fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg">
             <title>Email</title>
@@ -94,28 +94,6 @@
       </div>
     </section>
 
-    <!-- Sección: Servicios que Ofrezco -->
-    <section id="servicios-ofrezco" class="py-10 bg-gray-800 rounded-lg">
-      <h2 class="text-3xl font-bold text-center color1 mb-8">Servicios que Ofrezco 📌</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Card: Mantenimiento -->
-        <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Mantenimiento</h3>
-          <p class="text-color5">Limpieza de componentes internos, cambio de pantallas y teclado para prolongar la vida útil de tu equipo.</p>
-        </div>
-        <!-- Card: Instalación -->
-        <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Instalación de Software y Hardware</h3>
-          <p class="text-color5">Instalamos y configuramos los programas y dispositivos necesarios para que tu sistema rinda al máximo.</p>
-        </div>
-        <!-- Card: Consultoría -->
-        <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Consultoría Técnica</h3>
-          <p class="text-color5">Te asesoramos en la mejora, optimización y solución de problemas técnicos de tu equipo.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- Sección: Preguntas Frecuentes -->
     <section id="faq" class="py-10 bg-gray-800 rounded-lg">
       <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes 🤔</h2>
@@ -153,41 +131,19 @@
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow">
           <h3 class="text-2xl font-semibold color1 mb-4">Precios desde <span class="text-3xl font-bold">$15.00</span></h3>
-          <ul class="mb-4 space-y-2">
-            <li class="flex items-center"><span class="mr-2">✔️</span> Servicio rápido y confiable</li>
-            <li class="flex items-center"><span class="mr-2">✔️</span> Atención personalizada</li>
-            <li class="flex items-center"><span class="mr-2">✔️</span> Garantía en todos nuestros trabajos</li>
+          <ul class="list-disc pl-6 text-color5">
+            <li>Mantenimiento básico</li>
+            <li>Reparación de hardware</li>
+            <li>Instalación de software</li>
           </ul>
-          <a href="https://wa.me/50760690148" target="_blank" class="block text-center w-full bg-color4 text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-400 transition duration-300">
-            ¡Chateanos! 🚀
-          </a>
         </div>
       </div>
     </section>
-
-    <!-- Sección: Contacto -->
-    <section id="contacto" class="py-10 bg-gray-800 rounded-lg">
-     <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center gap-2">
-  Contáctanos 
-  <img src="phone-icon.png" alt="Ícono de celular" class="w-10 h-10 object-contain">
-</h2>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-        <a href="https://wa.me/50760690148" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp" class="bg-color4 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
-          Contáctanos por WhatsApp
-        </a>
-      </div>
-      <div class="mt-8 text-center">
-        <p class="text-lg">O escríbenos a: <a href="mailto:softwaresymas507@gmail.com" class="underline text-color4">softwaresymas507@gmail.com</a></p>
-      </div>
-    </section>
-
-    <!-- Pie de Página -->
-    <footer class="py-6 text-center text-color5">
-      <p>&copy; 2025 Servicios Técnicos. Todos los derechos reservados. | Desarrollado por Softwaresymas© 💻✨</p>
-    </footer>
   </main>
 
-  <!-- Script personalizado -->
-  <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 text-center text-color5">
+    <p>&copy; 2025 SOFTWARESYMAS - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
