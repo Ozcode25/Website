@@ -1,57 +1,43 @@
-:root {
-    --color-primario: #2c3e50;
-    --color-secundario: #3498db;
-    --color-hover: #2980b9;
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e304f;
 }
 
-/* Efecto hover para enlaces de navegación */
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
+/* Fuente personalizada para títulos */
+.font-titulo {
+  font-family: 'Montserrat', sans-serif;
 }
 
-nav ul li a:hover {
-    color: var(--color-hover);
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
+/* Colores personalizados */
+.color1 { color: #5F9EA0; }
+.bg-color1 { background-color: #5F9EA0; }
+.color2 { color: #F0F8FF; }
+.bg-color2 { background-color: #1e90ff; }
+.color3 { color: #000080; }
+.bg-color3 { background-color: #000080; }
+.color4 { color: #87CEEB; }
+.bg-color4 { background-color: #87CEEB; }
+.color5 { color: #778899; }
+.bg-color5 { background-color: #778899; }
+
+/* Animación para iconos */
+.icon-animation {
+  transition: transform 0.3s ease;
+}
+.icon-animation:active {
+  transform: scale(1.2) rotate(20deg);
 }
 
-/* Iconos en header */
-.header-social {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 15px;
+/* Tamaño de los iconos */
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
-.header-social a {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.header-social a:hover {
-    color: var(--color-secundario);
-}
-
-/* Iconos en footer */
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 15px;
-}
-
-.footer-social a {
-    color: #fff;
-    font-size: 1.8rem;
-    transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-    color: var(--color-secundario);
+/* Ajustes responsivos si se requiere */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
 }
