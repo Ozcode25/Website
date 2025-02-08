@@ -4,82 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOFTWARESYMAS - Servicio Técnico de Computadoras 💻🔧</title>
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Fuente para el título -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-  <!-- Fuente para el contenido -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body class="bg-sky-100 text-white">
-  <!-- Header Fijo con fondo gris traslúcido y letras blancas -->
-  <header class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-70 shadow z-50 text-white">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4 border-b border-gray-700">
-      <!-- Logo y Nombre -->
+  <!-- Header fijo -->
+  <header class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-70 text-white shadow-md z-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4">
       <div class="flex items-center gap-4">
-        <img src="Softwaresymas2025logo.png" alt="Logo de SOFTWARESYMAS" class="h-14 w-14 object-contain">
-        <div class="text-2xl font-bold font-titulo">
-          SOFTWARESYMAS
-        </div>
+        <img src="Softwaresymas2025logo.png" alt="Logo" class="h-14 w-14">
+        <div class="text-2xl font-bold">SOFTWARESYMAS</div>
       </div>
-      <!-- Iconos de Contacto con tamaños ajustados -->
       <div class="flex items-center gap-6">
-        <!-- WhatsApp Icon -->
         <a href="https://wa.me/50760690148" target="_blank">
           <img src="whatsapp-icon.png" alt="WhatsApp" class="h-10 w-10">
         </a>
-        <!-- Instagram Icon -->
-        <a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
+        <a href="https://www.instagram.com/softwaresymas" target="_blank">
           <img src="instagram-icon.png" alt="Instagram" class="h-10 w-10">
-        </a>
-        <!-- Email Icon -->
-        <a href="mailto:softwaresymas507@gmail.com" title="Email" class="icon-animation">
-          <svg role="img" viewBox="0 0 24 24" class="icon fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg">
-            <title>Email</title>
-            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Contenido Principal -->
   <main class="container mx-auto px-4 pt-24">
-    <!-- Sección: Header con CTA Principal -->
+    <!-- Introducción -->
     <section class="text-center py-10">
       <h1 class="text-4xl font-bold mb-4">¡Repara y optimiza tu PC hoy! 💻✨</h1>
-      <p class="text-lg mb-6">Ofrecemos servicios técnicos de mantenimiento, reparación e instalación para computadoras, laptops y de escritorio. ¡No esperes más y mejora tu equipo!</p>
+      <p class="text-lg mb-6">Ofrecemos servicios técnicos de mantenimiento, reparación e instalación para computadoras, laptops y de escritorio.</p>
       <a href="#contacto" class="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
         ¡Agenda tu servicio ahora! 🚀
       </a>
     </section>
 
-    <!-- Sección: Servicios -->
+    <!-- Servicios -->
     <section id="servicios" class="py-10 bg-gray-800 rounded-lg">
       <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios Técnicos 🛠️</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
           <h3 class="text-2xl font-semibold mb-2">Mantenimiento</h3>
-          <p>Limpieza interna, cambio de pantallas y teclado. ¡Tu equipo en óptimas condiciones!</p>
+          <p>Limpieza interna, cambio de pantallas y teclado.</p>
         </div>
-        <!-- Card 2 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2">Instalación de Software y Hardware</h3>
+          <h3 class="text-2xl font-semibold mb-2">Instalación de Software</h3>
           <p>Configuramos y actualizamos tu sistema para un mejor rendimiento.</p>
         </div>
-        <!-- Card 3 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
           <h3 class="text-2xl font-semibold mb-2">Consultoría Técnica</h3>
-          <p>Asesoría experta para la optimización y solución de problemas técnicos.</p>
+          <p>Asesoría experta para la solución de problemas técnicos.</p>
         </div>
       </div>
     </section>
 
-    <!-- Sección: Contacto -->
+    <!-- Conoce a tu técnico -->
+    <section id="tecnico" class="py-10">
+      <h2 class="text-3xl font-bold text-center mb-8">Conoce a tu Técnico 👨‍💻</h2>
+      <div class="max-w-3xl mx-auto text-center bg-gray-800 rounded-lg p-6 shadow">
+        <img src="tecnico.jpg" alt="Técnico" class="mx-auto rounded-full h-40 w-40 mb-4">
+        <h3 class="text-2xl font-semibold">Juan Pérez</h3>
+        <p class="text-lg mt-2">Con más de 10 años de experiencia en reparación y mantenimiento de equipos de cómputo. Especializado en hardware y software.</p>
+      </div>
+    </section>
+
+    <!-- ¿Por qué elegirnos? -->
+    <section id="ventajas" class="py-10">
+      <h2 class="text-3xl font-bold text-center mb-8">¿Por qué elegirnos? 🌟</h2>
+      <ul class="list-disc text-lg pl-6">
+        <li>📌 Atención rápida y eficiente</li>
+        <li>💡 Soluciones a la medida</li>
+        <li>🔧 Experiencia comprobada en reparación y mantenimiento</li>
+      </ul>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">Lo que dicen nuestros clientes 💬</h2>
+      <div class="max-w-3xl mx-auto">
+        <blockquote class="border-l-4 border-blue-400 pl-4 italic">
+          "Excelente servicio, mi laptop quedó como nueva. ¡100% recomendado!" - Ana P.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contáctanos -->
     <section id="contacto" class="py-10 bg-gray-800 rounded-lg">
       <h2 class="text-3xl font-bold text-center mb-8">Contáctanos 📞</h2>
       <div class="max-w-lg mx-auto text-center">
@@ -95,5 +103,8 @@
       </div>
     </section>
   </main>
+    <footer class="bg-gray-900 py-8 text-center text-color5">
+    <p>&copy; 2025 SOFTWARESYMAS - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
