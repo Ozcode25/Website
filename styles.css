@@ -14,9 +14,6 @@
   /* Color de fondo principal */
   --primary-bg: #1e304f;
 }
-header {
-    background-color: #D3D3D3; /* Light gray */
-    color: black; /* Ensure text is visible */
 }
 
 /* Global */
@@ -61,4 +58,11 @@ body {
   header .container {
     flex-direction: column;
   }
+}
+/* Otros estilos previos */
+
+header {
+    background-color: #D3D3D3; /* Gris claro */
+    color: black; /* Texto en color negro */
+    padding: 20px; /* Añadir un poco de espacio */
 }
