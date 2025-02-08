@@ -1,7 +1,24 @@
+/* Variables CSS para control centralizado de colores */
+:root {
+  /* Colores personalizados */
+  --color1: #5F9EA0;
+  --bg-color1: #5F9EA0;
+  --color2: #F0F8FF;
+  --bg-color2: #1e90ff;
+  --color3: #000080;
+  --bg-color3: #000080;
+  --color4: #87CEEB;
+  --bg-color4: #87CEEB;
+  --color5: #778899;
+  --bg-color5: #778899;
+  /* Color de fondo principal */
+  --primary-bg: #1e304f;
+}
+
 /* Global */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1e304f;
+  background-color: var(--primary-bg);
 }
 
 /* Fuente personalizada para títulos */
@@ -9,17 +26,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Colores personalizados */
-.color1 { color: #5F9EA0; }
-.bg-color1 { background-color: #5F9EA0; }
-.color2 { color: #F0F8FF; }
-.bg-color2 { background-color: #1e90ff; }
-.color3 { color: #000080; }
-.bg-color3 { background-color: #000080; }
-.color4 { color: #87CEEB; }
-.bg-color4 { background-color: #87CEEB; }
-.color5 { color: #778899; }
-.bg-color5 { background-color: #778899; }
+/* Clases de color utilizando variables */
+.color1 { color: var(--color1); }
+.bg-color1 { background-color: var(--bg-color1); }
+.color2 { color: var(--color2); }
+.bg-color2 { background-color: var(--bg-color2); }
+.color3 { color: var(--color3); }
+.bg-color3 { background-color: var(--bg-color3); }
+.color4 { color: var(--color4); }
+.bg-color4 { background-color: var(--bg-color4); }
+.color5 { color: var(--color5); }
+.bg-color5 { background-color: var(--bg-color5); }
 
 /* Animación para iconos */
 .icon-animation {
@@ -35,7 +52,7 @@ body {
   height: 40px;
 }
 
-/* Ajustes responsivos si se requiere */
+/* Ajustes responsivos */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
