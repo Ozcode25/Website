@@ -13,17 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   <!-- Fuente para el contenido -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-sky-100 text-white">
-  <!-- Header Fijo con fondo traslúcido -->
-  <header class="fixed top-0 left-0 right-0 bg-sky-100 bg-opacity-70 shadow z-50">
+  <!-- Header Fijo con fondo gris traslúcido y letras blancas -->
+  <header class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-70 shadow z-50 text-white">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4 border-b border-gray-700">
       <!-- Logo y Nombre -->
       <div class="flex items-center gap-4">
         <img src="Softwaresymas2025logo.png" alt="Logo de SOFTWARESYMAS" class="h-14 w-14 object-contain">
-        <div class="text-2xl font-bold font-titulo color1">
+        <div class="text-2xl font-bold font-titulo">
           SOFTWARESYMAS
         </div>
       </div>
@@ -52,98 +50,50 @@
   <main class="container mx-auto px-4 pt-24">
     <!-- Sección: Header con CTA Principal -->
     <section class="text-center py-10">
-      <h1 class="text-4xl font-bold color1 mb-4">¡Repara y optimiza tu PC hoy! 💻✨</h1>
+      <h1 class="text-4xl font-bold mb-4">¡Repara y optimiza tu PC hoy! 💻✨</h1>
       <p class="text-lg mb-6">Ofrecemos servicios técnicos de mantenimiento, reparación e instalación para computadoras, laptops y de escritorio. ¡No esperes más y mejora tu equipo!</p>
-      <a href="#contacto" class="inline-block bg-color4 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
+      <a href="#contacto" class="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
         ¡Agenda tu servicio ahora! 🚀
       </a>
     </section>
 
-    <!-- Sección: Servicios (3 Cards) -->
+    <!-- Sección: Servicios -->
     <section id="servicios" class="py-10 bg-gray-800 rounded-lg">
-      <h2 class="text-3xl font-bold text-center color1 mb-8">Nuestros Servicios Técnicos 🛠️</h2>
+      <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios Técnicos 🛠️</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Mantenimiento</h3>
-          <p class="text-color5">Limpieza interna, cambio de pantallas y teclado. ¡Tu equipo en óptimas condiciones!</p>
+          <h3 class="text-2xl font-semibold mb-2">Mantenimiento</h3>
+          <p>Limpieza interna, cambio de pantallas y teclado. ¡Tu equipo en óptimas condiciones!</p>
         </div>
         <!-- Card 2 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Instalación de Software y Hardware</h3>
-          <p class="text-color5">Configuramos y actualizamos tu sistema para un mejor rendimiento.</p>
+          <h3 class="text-2xl font-semibold mb-2">Instalación de Software y Hardware</h3>
+          <p>Configuramos y actualizamos tu sistema para un mejor rendimiento.</p>
         </div>
         <!-- Card 3 -->
         <div class="border rounded-lg shadow p-6 bg-gray-900">
-          <h3 class="text-2xl font-semibold mb-2 color1">Consultoría Técnica</h3>
-          <p class="text-color5">Asesoría experta para la optimización y solución de problemas técnicos.</p>
+          <h3 class="text-2xl font-semibold mb-2">Consultoría Técnica</h3>
+          <p>Asesoría experta para la optimización y solución de problemas técnicos.</p>
         </div>
       </div>
     </section>
 
-    <!-- Sección: Quién es el Técnico -->
-    <section id="quien-es" class="py-10 bg-gray-800 rounded-lg">
-      <div class="flex flex-col items-center">
-        <div class="mb-6">
-          <img src="Mi-Imagen.JPG" alt="Mi foto" class="rounded-full border-4 border-white shadow-lg w-32 h-32 object-cover">
-        </div>
-        <div class="max-w-md text-center">
-          <h2 class="text-3xl font-bold mb-4">Conoce a tu Técnico 🔧</h2>
-          <p class="text-lg">Soy un experto en mantenimiento y reparación de computadoras, con años de experiencia y pasión por la tecnología. Estoy aquí para ayudarte a que tu equipo funcione de manera óptima. ¡Confía en mí para darle nueva vida a tu PC!</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección: Preguntas Frecuentes -->
-    <section id="faq" class="py-10 bg-gray-800 rounded-lg">
-      <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes 🤔</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="space-y-4">
-          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
-            <h4 class="font-semibold">¿Cuánto tiempo demora el servicio? ⏰</h4>
-            <p>La mayoría de nuestros servicios se realizan en menos de 24 horas.</p>
-          </div>
-          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
-            <h4 class="font-semibold">¿Ofrecen garantía? ✅</h4>
-            <p>Sí, todos nuestros servicios cuentan con garantía de calidad.</p>
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
-            <h4 class="font-semibold">¿Cuánto cuesta el servicio? 💲</h4>
-            <p>Contamos con precios competitivos según el tipo de servicio y equipo.</p>
-          </div>
-          <div class="border rounded-lg shadow p-4 bg-gray-200 text-black">
-            <h4 class="font-semibold">¿Realizan servicios a domicilio? 🏠</h4>
-            <p>Sí, ofrecemos servicio a domicilio para mayor comodidad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección: Precio y Beneficios -->
-    <section id="precio" class="py-10 bg-gray-800 rounded-lg">
-      <h2 class="text-3xl font-bold text-center color1 mb-8">Precios y Beneficios 💰</h2>
-      <div class="grid md:grid-cols-2 gap-6 items-center">
-        <div class="bg-gray-900 p-6 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold color1 mb-4">¡La mejor inversión para tu equipo!</h3>
-          <p class="text-color5 mb-4">Con nuestros servicios técnicos, aseguras el óptimo funcionamiento de tu computadora, prolongas su vida útil y evitas costosos reemplazos. ¡No esperes a que el problema se agrave!</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold color1 mb-4">Precios desde <span class="text-3xl font-bold">$15.00</span></h3>
-          <ul class="list-disc pl-6 text-color5">
-            <li>Mantenimiento básico</li>
-            <li>Reparación de hardware</li>
-            <li>Instalación de software</li>
-          </ul>
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="py-10 bg-gray-800 rounded-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">Contáctanos 📞</h2>
+      <div class="max-w-lg mx-auto text-center">
+        <p class="text-lg mb-4">¿Tienes dudas o necesitas ayuda con tu computadora? ¡Contáctanos hoy mismo!</p>
+        <div class="flex flex-col items-center">
+          <a href="https://wa.me/50760690148" class="bg-green-500 text-white px-6 py-3 rounded-full shadow hover:bg-green-400 transition duration-300">
+            Enviar mensaje por WhatsApp 📲
+          </a>
+          <a href="mailto:softwaresymas507@gmail.com" class="mt-4 bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-400 transition duration-300">
+            Enviar un correo ✉️
+          </a>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 py-8 text-center text-color5">
-    <p>&copy; 2025 SOFTWARESYMAS - Todos los derechos reservados</p>
-  </footer>
 </body>
 </html>
