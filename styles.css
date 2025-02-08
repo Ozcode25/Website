@@ -14,6 +14,10 @@
   /* Color de fondo principal */
   --primary-bg: #1e304f;
 }
+header {
+    background-color: #D3D3D3; /* Light gray */
+    color: black; /* Ensure text is visible */
+}
 
 /* Global */
 body {
